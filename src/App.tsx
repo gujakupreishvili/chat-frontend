@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { useCookies } from "react-cookie";
 import AuthPopUpChildren from "./components/authPopUp/authPopUpChildren";
-import Header from "./components/header/header";
 import Home from "./components/home/home";
 
 function App() {
@@ -18,7 +17,6 @@ function App() {
 
   return (
     <>
-      <Header />
       <Home />
 
       {showPopup && <AuthPopUpChildren />}
